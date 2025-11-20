@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Pro</title>
+    <link rel="stylesheet" href="Style.CSS">
+    <script src="https://kit.fontawesome.com/b3b89cf277.js" crossorigin="anonymous"></script>
+    <!-- <link rel="shortcut icon" href="img/Spotify proo.png" type="image/x-icon"> -->
+</head>
+
+<body>
+    <div class="nav">
+        <div class="iconn"><i class="fa-brands fa-spotify fa-2xl"></i>
+            <button class="home curs da"><i class="fa-solid fa-house fa-xl"></i></button>
+            <div class="search curs">
+                <div class="scs">
+                    <p class="ds"> <i class="fa-solid fa-magnifying-glass ds fa-xl" style="color: #a1a1a1;"></i></p>
+                    <input id="search-input" class="put" placeholder="What do you want to play?" type="text">
+                </div>
+                <div class="styl curs"><i class="fa-solid fa-window-restore fa-xl" style="color: #878787;"></i></div>
+            </div>
+        </div>
+        <div class="naval2">
+            <button class="explore">Explore Premium</button>
+            <p class="curs da"><i class="fa-solid fa-download fa-sm" style="color: #525252;"></i> <span
+                    style="color: rgb(104, 104, 104);">
+                    <a
+                        href="https://spotify.app.link/RlzQUXrWCxb?_p=c11431dc9a0260eee01f8be3e9b1b2">InstallApp</a></span>
+            </p>
+            <p class="curs"><i class="fa-solid fa-bell fa-lg" style="color: #595959;"></i></p>
+            <p class="HN curs">H</p>
+        </div>
+    </div>
+    <div class="main">
+        <div class="list">
+            <div>
+                <button onclick="ic()" class="icss ic"><i class="fa-solid fa-xmark fa-xl ic"
+                        style="color:white;"></i></button>
+            </div>
+            <div class="li">
+                <div class="to">
+                    <h2>Your Library</h2>
+                    <p class="curs"><i class="fa-solid fa-plus fa-xl" style="color: #ffffff;"></i></p>
+                </div>
+                <div class="over"></div>
+            </div>
+        </div>
+
+        <div class="lis"></div>
+    </div>
+    <div class="time">
+        <img class="gmi" src="img/musicpro.jpeg" alt="">
+        <marquee acrollamount="10">
+            <p class="name"></p>
+        </marquee>
+        <div class="tim1">
+            <div class="pl">
+                <button class="tb1 curs hi privous"><i class="fa-solid fa-forward-step fa-rotate-180 fa-2xl"
+                        style="color:white;"></i></button>
+                <button onclick="change()" class="tb2 curs "><i class="fa-solid fa-play fa-xl change"
+                        style="color: #000000;"></i></button>
+                <button class="tb1 curs hi next"><i class="fa-solid fa-forward-step fa-2xl"
+                        style="color:white;"></i></button>
+            </div>
+            <div class="zero curs ">
+                <span class="currenttime"></span>
+                <input id="seekbar" class="ran" min='0' max='100' type="range" value="0">
+                <span class="timeduration"></span>
+            </div>
+        </div>
+        <div class="tim2">
+            <button onclick="mute()" class="tb1 curs non"><i class="fa-solid fa-volume-high fa-xl volume"
+                    style="color:white;"></i></button>
+            <input class="rng curs non" id="volume" type="range" min='0' max='100' value="50">
+        </div>
+    </div>
+    <div class="get">
+        <p><i onclick="eco()" class="fa-solid fa-arrow-left fa-xl"></i></p>
+        <div class="app">
+            <i class="fa-brands fa-spotify fa-2xl" style="color: #00ff11;"></i>
+            <h4>Get the Spotify app</h4>
+            <p>It’s not only free, but includes the full suite of Spotify features. Just one more way to stream and
+                enjoy.</p>
+            <a href="https://spotify.app.link/RlzQUXrWCxb?_p=c11431dc9a0260eee01f8be3e9b1b2"> <button class="ga">Get the
+                    App </button>
+            </a>
+        </div>
+    </div>
+    <div class="srch">
+        <div class="sin">
+            <h2>Search</h2>
+            <p class="pi"><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #707070;"></i><input type="text"
+                    name="" placeholder="What do you want to liston to?" id=""></p>
+        </div>
+        <div class="boxes">
+            <h4>Browse all</h4>
+            <div>
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="lib">
+        <div class="moosataps">
+            <p>Very Important information listen Carefully</p>
+            <button onclick="taps()" class="moosa">Start</button>
+        </div>
+    </div>
+    <div class="snv">
+        <button onclick="eco()" class="b w">
+            <p><i class="fa-solid fa-house ig iw fa-xl"></i></p>
+            Home
+        </button>
+        <button onclick="sech()" class="b g">
+            <p> <i class="fa-solid fa-magnifying-glass ig fa-xl"></i></p>
+            Search
+        </button>
+        <button onclick="library()" class="b g">
+            <p><i class="fa-solid fa-tape ig fa-xl"></i></p>
+            Taps
+        </button>
+        <button onclick="getapp()" class="b g">
+            <p><i class="fa-brands fa-spotify ig fa-2xl"></i></p>
+            <a href="https://spotify.app.link/RlzQUXrWCxb?_p=c11431dc9a0260eee01f8be3e9b1b2">Get App</a>
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
